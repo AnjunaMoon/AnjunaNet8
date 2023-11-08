@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnjunaNet8", "AnjunaNet8\AnjunaNet8.csproj", "{26BF3A7E-A508-407D-997F-B843DA308509}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "anjunanet8", "anjunanet8\anjunanet8.csproj", "{26BF3A7E-A508-407D-997F-B843DA308509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

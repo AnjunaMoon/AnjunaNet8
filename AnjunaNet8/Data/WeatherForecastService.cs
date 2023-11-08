@@ -1,4 +1,4 @@
-namespace AnjunaNet8.Data
+namespace anjunanet8.Data
 {
     public class WeatherForecastService
     {

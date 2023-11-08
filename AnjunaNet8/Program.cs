@@ -1,8 +1,8 @@
-using AnjunaNet8.Data;
+using anjunanet8.Data;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace AnjunaNet8
+namespace anjunanet8
 {
     public class Program
     {

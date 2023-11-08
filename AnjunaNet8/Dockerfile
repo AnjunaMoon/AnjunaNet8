@@ -10,16 +10,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["AnjunaNet8/AnjunaNet8.csproj", "AnjunaNet8/"]
-RUN dotnet restore "AnjunaNet8/AnjunaNet8.csproj"
+COPY ["anjunanet8/anjunanet8.csproj", "anjunanet8/"]
+RUN dotnet restore "anjunanet8/anjunanet8.csproj"
 COPY . .
-WORKDIR "/src/AnjunaNet8"
-RUN dotnet build "AnjunaNet8.csproj" -c Release -o /app/build
+WORKDIR "/src/anjunanet8"
+RUN dotnet build "anjunanet8.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "AnjunaNet8.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "anjunanet8.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AnjunaNet8.dll"]
+ENTRYPOINT ["dotnet", "anjunanet8.dll"]
