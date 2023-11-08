@@ -1,0 +1,10 @@
+Web app:
+	anjuna-net8-lab
+
+Resource group:
+	anjuna-net8-lab_group
+
+CosmosDB
+	Account: anjuna-net8-lab-server
+	Database: anjuna-net8-lab-database
+	
